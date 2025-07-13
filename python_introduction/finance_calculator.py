@@ -11,4 +11,4 @@ interest = 0.05
 
 proj_savings = mon_savings*12 + (mon_savings*12 * interest)
 
-print(f"Projected savings after one year, with interest, is: {proj_savings:.2f}")
+print(f"Projected savings after one year, with interest, is: {proj_savings}")
