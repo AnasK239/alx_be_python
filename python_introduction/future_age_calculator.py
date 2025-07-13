@@ -1,6 +1,6 @@
 
 
-curr = input("Enter your current age: ")
+curr = input("How old are you?")
 while not curr.isdigit():
     curr = input("Please enter a valid number for your current age: ")
 curr = int(curr)
