@@ -18,8 +18,6 @@ match operation:
             result = num1 / num2
         else:
             result = "Error: Division by zero is not allowed."
-    case _:
-        result = "Error: Invalid operation."
 
 
 print (f"The result is {result}")
