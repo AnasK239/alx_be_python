@@ -1,5 +1,5 @@
 
-class Book():
+class Book:
 
     def __init__(self , title , author):
         self.title = title
@@ -10,15 +10,15 @@ class Book():
         """Returns True if the book is not checked out."""
         return not self._is_checked_out
     
-    def set_available(self):
+    def return_book(self):
         self._is_checked_out = False
 
-    def set_not_available(self):
+    def check_out(self):
         self._is_checked_out = True
 
 
 
-class Library ():
+class Library:
     def __init__(self):
         self._books = []
 
@@ -40,10 +40,10 @@ class Library ():
     def check_out_book(self, title:str):
         book = self._find_book_by_title(title)
         if book in self._books and book.is_available():
-            book.set_not_available()
+            book.check_out()
 
 
     def return_book(self, title:str):
         book = self._find_book_by_title(title)
         if book in self._books and not book.is_available():
-            book.set_available()
+            book.return_book()
